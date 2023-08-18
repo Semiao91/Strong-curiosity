@@ -1,5 +1,10 @@
 import './App.css'
 import Burguer from './components/Burguer'
+import Logo from './assets/logo1.png'
+import House2 from './assets/house2.jpg'
+import House3 from './assets/house3.jpg'
+import House5 from './assets/house5.jpg'
+import House6 from './assets/house6.jpg'
 
 function App() {
 
@@ -8,7 +13,7 @@ function App() {
       <div className='bg-black h-16 flex text-white justify-between items-center px-4 md:justify-around'>
         <div className='flex'>
           <div>Strong Curiosity</div>
-          <img className='h-8 w-14' src="src\assets\logo1.png" alt="" />
+          <img className='h-8 w-14' src={Logo} alt="" />
         </div>
         <div className='md:flex gap-8 items-center hidden'>
           <div>About</div>
@@ -35,12 +40,12 @@ function App() {
           </div>
           <div className='md:grid grid-rows-3 grid-cols-3 gap-4 grow-1 hidden'>
             <div className='bg-black w-[300px] h-[143px] col-span-2 rounded-bl-full rounded-tr-full hidden md:block'></div>
-            <img src='src\assets\house2.jpg' className='bg-black w-[143px] h-[143px] rounded-tr-full rounded-tl-full rounded-bl-full hidden mdplus:block'></img>
-            <img src='src\assets\house3.jpg' className='bg-black w-[143px] h-[143px] rounded-tr-full rounded-br-full rounded-bl-full hidden mdplus:block'></img>
+            <img src={House2} className='bg-black w-[143px] h-[143px] rounded-tr-full rounded-tl-full rounded-bl-full hidden mdplus:block'></img>
+            <img src={House3} className='bg-black w-[143px] h-[143px] rounded-tr-full rounded-br-full rounded-bl-full hidden mdplus:block'></img>
             <div className='bg-black w-[143px] h-[143px] hidden mdplus:block'></div>
-            <img src='src\assets\house5.jpg' className='bg-black w-[143px] h-[143px] rounded-bl-full hidden mdplus:block'></img>
+            <img src={House5} className='bg-black w-[143px] h-[143px] rounded-bl-full hidden mdplus:block'></img>
             <div className='bg-black w-[143px] h-[143px] rounded-full hidden mdplus:block'></div>
-            <img src='src\assets\house5.jpg' className='bg-black w-[300px] h-[143px] col-span-2 rounded-br-full rounded-tl-full hidden md:block'></img>
+            <img src={House5} className='bg-black w-[300px] h-[143px] col-span-2 rounded-br-full rounded-tl-full hidden md:block'></img>
           </div>
         </div>
       </div>
@@ -73,7 +78,7 @@ function App() {
             </div>
           </div>
           <div className='flex items-center justify-center h-full w-[450px] lg:pr-8'>
-            <img src='src\assets\house6.jpg' className='mt-20 bg-white w-[300px] h-[440px] lg:w-[470px] lg:h-[480px] col-span-2 rounded-bl-[160px] rounded-tr-[160px] rounded-tl-xl rounded-br-xl'></img>
+            <img src={House6} className='mt-20 bg-white w-[300px] h-[440px] lg:w-[470px] lg:h-[480px] col-span-2 rounded-bl-[160px] rounded-tr-[160px] rounded-tl-xl rounded-br-xl'></img>
           </div>
         </div>
       </div>
